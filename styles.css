@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    
 }
 
 body {
    background-color: #F2F2F2;
    font-family: 'Manrope';
+   
 }
-
 
 #circles {
     position: absolute;
@@ -96,7 +97,7 @@ h1 {
 .round {
     position: relative;
     left: 10%;
-    top: 20%;
+    top: 19%;
     width: 14px;
     height: 14px;
     transition: 0.3s;
@@ -109,15 +110,27 @@ h1 {
     transition: 0.3s;
 }
 
-#slider_round {
-    position: absolute;
-    left: 139.5px;
-    top: 12%;
+input[type="range"] {
+    -webkit-appearance: none;
+    background: #ECF0FB;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+    height: 8px;
+    width: 279px;
+    border-radius: 5px;
+    overflow: visible;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
     width: 40px;
     height: 40px;
-    background-color: #10D8C4;
     border-radius: 50%;
-    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+    background: #10D8C4;
+  }
+
+.active {
+    left: 10%;
 }
 
 #arrows {

@@ -16,46 +16,26 @@ sliderButton.addEventListener('click', (e) => {
 });
 
 
-slider.addEventListener('click', (y) => {
+// Changes the value of HTML value
+
+slider.addEventListener('change', (y) => {
     var views = document.getElementById('views');
-    if (slider.value < 50) {
-        views.innerHTML = "30K PAGEVIEWS"
-    } else if (slider.value > 50) {
-        views.innerHTML = "70K PAGEVIEWS"
-    }
+    var price = document.getElementById('price');
+    if (slider.value == 0) {
+        views.innerHTML = "10K PAGEVIEWS",
+        price.innerHTML = "$8.00"
+    } else if (slider.value == 25) {
+        views.innerHTML = "50K PAGEVIEWS",
+        price.innerHTML = "$12.00"
+    } else if (slider.value == 50) {
+        views.innerHTML = "100K PAGEVIEWS",
+        price.innerHTML = "$16.00"
+    }  
+    else if (slider.value == 75)  {
+        views.innerHTML = "500K PAGEVIEWS",
+        price.innerHTML = "$24.00"
+    } else if (slider.value == 100) {
+        views.innerHTML = "1M PAGEVIEWS",
+        price.innerHTML = "$36.00"
+    }    
 });
-
-
-
-
-
-
-// - 10K pageviews / $8 per month
-// - 50K pageviews / $12 per month
-// - 100K pageviews / $16 per month
-// - 500k pageviews / $24 per month
-// - 1M pageviews / $36 per month
-
-
-var rates = [
-    { 
-        pageviews: "10k pageviews",
-        permonth: "$8 per month"
-    },
-    { 
-        pageviews: "50k pageviews",
-        permonth: "$12 per month"
-    },
-    { 
-        pageviews: "100k pageviews",
-        permonth: "$16 per month"
-    },
-    { 
-        pageviews: "500k pageviews",
-        permonth: "$24 per month"
-    },
-    { 
-        pageviews: "1M pageviews",
-        permonth: "$36 per month"
-    }
-]
