@@ -11,39 +11,46 @@
   <title>Interactive pricing component</title>
 </head>
 <body>
+
 <div class="main">
   <img src="./images/bg-pattern.svg">
   <img src="./images/pattern-circles.svg" id="circles">
   <div class="title">
     <h1>Simple, traffic-based pricing</h1>
-    <p id="sub_title">Sign-up for our 30-day trial. <br> 
-      No credit card required.</p>
+    <p id="sub_title">Sign-up for our 30-day trial. No credit card required.</p>
   </div>
+
   <div class="interactive">
-    <p id="views">100K PAGEVIEWS</p>
-    <input type="range" min="0" max="100" value="50" step="25" class="slider" id="slider_round"></input>
-    <div class="price">
+      <p id="views">100K PAGEVIEWS</p>
+      <input type="range" min="0" max="100" value="50" step="25" class="slider"></input>
+      <div class="price">
       <span id="price">$16.00</span>
       <span id="month">/ month</span>
-    </div>
+  </div>
 
-    <div id="on_off">
+    <div id="on_off"> 
       <span>Monthly Billing</span>
-      <div class="switch">
+        <div class="switch">
         <div class="round">
         </div>
-      </div>
-      <span>Yearly Billing</span>
+        </div>
+        <span>Yearly Billing</span>
+        <div class="percentage">-25%</div>
     </div>
+    
     <div id="line"></div>
+
     <div class="description">
-      <span><img src="images/icon-check.svg"> Unlimited websites</span>
-      <span><img src="images/icon-check.svg"> 100% data ownership</span>
-      <span><img src="images/icon-check.svg"> Email reports</span>
+      <span id="uno"><img src="images/icon-check.svg"> Unlimited websites</span>
+      <span id="uno"><img src="images/icon-check.svg"> 100% data ownership</span>
+      <span id="uno"><img src="images/icon-check.svg"> Email reports</span>
     </div>
+
     <button>Start my trial</button>
   </div>
 </div> 
+
 <script src="main.js"></script>
+
 </body>
 </html>

@@ -72,6 +72,22 @@ h1 {
     color: #293356;
 }
 
+.percentage {
+    width: 41px;
+    height: 19px;
+    padding-top: 2px;
+    border-radius: 9.5px;
+    background: #FEEDE8;
+    font-size: 10px;
+    line-height: 14px;
+    color: #FF8D68;
+    text-align: center;
+}
+
+.percentage_desktop {
+    display: none;
+}
+
 #on_off {
     display: flex;
     align-items: center;
@@ -180,7 +196,9 @@ h1 {
 }
 
 #on_off {
-    width: 50%;
+    width: 71%;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .slider[type="range"] {
@@ -242,5 +260,11 @@ button {
     line-height: 19px;
     letter-spacing: 2px;
 }
+
+.percentage {
+    width: 80px;
+    height: 19px;
+}
+
 
 }
