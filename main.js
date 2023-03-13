@@ -1,12 +1,14 @@
 "use strict";
-
+const switchBtn = document.querySelector('.switch');
 const sliderButton = document.querySelector('.round');
 const slider = document.querySelector('.slider');
 
 
 // Switch button Monthly to Yearly
 
-sliderButton.addEventListener('click', (e) => {
+
+switchBtn.addEventListener('click', (p) => {
+    
     var price = document.getElementById('price');
     sliderButton.classList.toggle('round_on');
     if (sliderButton.classList == 'round round_on') {
@@ -15,8 +17,8 @@ sliderButton.addEventListener('click', (e) => {
         changeValues(),
         document.getElementById('month').innerHTML = '/ monthly'
     }
-
-});
+    
+})
 
 // Discount Changes
 
@@ -56,23 +58,23 @@ function changeValues() {
 function calculateYearly() {
     if (slider.value == 0) {
         views.innerHTML = "10K PAGEVIEWS",
-        price.innerHTML = "$24.00"
+        price.innerHTML = "$72.00"
         document.getElementById('month').innerHTML = '/ yearly'
     }   else if (slider.value == 25) {
         views.innerHTML = "50K PAGEVIEWS",
-        price.innerHTML = "$36.00"
+        price.innerHTML = "$108.00"
         document.getElementById('month').innerHTML = '/ yearly'
     } else if (slider.value == 50) {
         views.innerHTML = "100K PAGEVIEWS",
-        price.innerHTML = "$48.00"
+        price.innerHTML = "$144.00"
         document.getElementById('month').innerHTML = '/ yearly'
     }  else if (slider.value == 75)  {
         views.innerHTML = "500K PAGEVIEWS",
-        price.innerHTML = "$72.00"
+        price.innerHTML = "$216.00"
         document.getElementById('month').innerHTML = '/ yearly'
     } else if (slider.value == 100) {
         views.innerHTML = "1M PAGEVIEWS",
-        price.innerHTML = "$108.00"
+        price.innerHTML = "$324.00"
         document.getElementById('month').innerHTML = '/ yearly'
     } 
 }
